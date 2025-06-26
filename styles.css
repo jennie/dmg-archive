@@ -1,32 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body,
-html {
-  font-family: "Inter", sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #000;
-    color: #fff;
-    height: 100vh;
-    width: 100%;
-    overflow: auto;
+  margin: 0;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    padding: 2rem;
+  max-width: 1400px;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.rip {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.intro {
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.intro p {
+  margin: 0 0 1rem;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .archive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  body {
+    padding: 1rem;
+  }
+}
+
+.column > div {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 2rem 0 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+h3:first-of-type {
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+  color: #AD98FC !important;
+  text-decoration: underline !important;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 1;
 }
 
 .logo-container {
@@ -34,13 +109,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .content p.rip {
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
     margin: 1rem 0 2rem 0;
-
 }
+
 .logo {
     max-width: 300px;
     height: auto;
@@ -74,4 +150,60 @@ body {
 
 .content a:hover {
     color: #fff;
+}
+
+.archived-projects {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.archived-projects h2,
+.game-jams h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.game-jams h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.game-jams h3:first-of-type {
+  margin-top: 0;
+}
+
+.archived-projects ul,
+.game-jams ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.archived-projects li,
+.game-jams li {
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.archived-projects a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.archived-projects a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.jam-logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  display: block;
 } 

@@ -206,4 +206,129 @@ a:hover {
   height: auto;
   margin-top: 2rem;
   display: block;
+}
+
+.references {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.references h2 {
+  margin-bottom: 2rem;
+}
+
+.references ul {
+  max-width: 800px;
+}
+
+.references li {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.references strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.references em {
+  color: #AD98FC;
+  font-style: italic;
+}
+
+.references .note {
+  display: block;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+}
+
+.speaking {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.speaking h2 {
+  margin-bottom: 2rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.year h3 {
+  color: #AD98FC;
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.year ul {
+  margin: 0;
+}
+
+.year li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.year strong {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.organizers {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.organizers h2 {
+  margin-bottom: 1.5rem;
+}
+
+.organizers p {
+  max-width: 800px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.org-section {
+  margin-bottom: 2.5rem;
+}
+
+.org-section h3 {
+  color: #AD98FC;
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.org-section ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem 2rem;
+  margin: 0;
+}
+
+.org-section li {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.org-section strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.org-section .year,
+.org-section .role {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+  margin-left: 0.5rem;
 } 

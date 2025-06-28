@@ -1,0 +1,67 @@
+Speaker 1
+00:00 - 00:36
+According to industry reports, women make up nearly half of the people playing video games. But the video game world is still one that is closely associated with men, both in terms of consumers and in those making the games. There are various groups out there trying to change that, including one co-founded by my next guest. Cecily Carver is one of the organizers of Dames Making Games. The group's going to be hosting a speaker series event tomorrow night. Hi, Jill. Thanks for coming in. Tell me about why did you want to start up Dames Making Games? 
+
+Cecily
+00:36 - 01:24
+Well, I think there are a lot of women who are very passionate about games and game culture and who might be interested in developing games, but who feel like game culture is not for them, that they don't belong. And it's something that they're not always likely to talk about. It's not something that they're always likely to see themselves doing. And we want to get them to a point where they can see themselves as game creators and game developers. and make games that reflect the things they want to see. Have you always been an avid video game player? Yeah, my parents had a Commodore 64 when I was growing up, and I played a lot of games on that. And I was a big fan of the adventure games that companies like LucasArts and Sierra were putting out in the 90s. And I'm a big Bioware fan, too, games like Baldur's Gate, Dragon Age, and Mass Effect. 
+
+Speaker 1
+01:29 - 01:37
+Is something missing for you as a woman? That would be different if there were women behind the scenes being more involved in the creation of games? 
+
+Cecily
+01:38 - 01:57
+Sometimes games are seen as a way of wish fulfillment and sometimes the kinds of wishes that you see getting fulfilled in games are fairly narrow. Very combat oriented a lot of the time. So I'd like to see maybe a bit of a broader range in the kinds of games that are getting made. 
+
+Speaker 1
+01:59 - 02:04
+What has your experience been like on the programming side, as a woman in the programming community? 
+
+Cecily
+02:05 - 02:19
+I trained as a computer programmer in university, and that's where I've spent most of my career. It's something that I enjoyed very much intellectually, but I often found that there were a whole lot of little things that made me feel like I didn't belong. 
+
+Speaker 1
+02:20 - 02:21
+Like what? 
+
+Cecily
+02:21 - 02:49
+Well, for example, when I was in university, the classes would always be about 10% women. count. And in a class of 50 people, there'd be five women. In a class of 70 people, there'd be seven women. And sometimes people would make jokes about it. Like in a lab, someone would turn to me and say, what are you doing here? There are no women here. And they were joking. But it's very hard to feel like you belong in an environment like that. 
+
+Speaker 1
+02:50 - 02:57
+So this dames making games is your sort of attempt to try to change that situation. Tell me about what you do. 
+
+Cecily
+02:59 - 03:24
+We've been around for about two years now, and we do a variety of things. We hold workshops for women who are interested in creating their own games, and sometimes those workshops will focus on a single skill, like programming or illustration, but sometimes they'll be about taking someone through the process of developing their own game from start to finish that is entirely theirs, and that it's the kind of thing that they want to make. 
+
+Speaker 1
+03:24 - 03:49
+I would imagine, I mean, I'm not a big video game player myself, But I would imagine that there, you know, it feels like there's a big leap between knowing how to play one and knowing how to make one. I mean, is that sort of daunting? And you think, oh, I don't have the whatever, several years of training in programming and code and all the things that you might need to be able to create a game? It's certainly a different skill set to make a game than it 
+
+Cecily
+03:49 - 04:17
+is to play one. But one thing that I find is when women talk to me about wanting to make a game rather than just play one, often the first thing they'll say to me is, I don't know how to code. And what I don't think people always realize is that coding isn't the only skill that matters when it comes to making games. Games also need musicians and illustrators and writers and designers. And all kinds of people go into making a game that aren't necessarily programmers. 
+
+Speaker 1
+04:18 - 04:35
+So what are you seeing already from the work that you've done over the last couple of years? Or how does what you're seeing so far, what does it tell you about what we've perhaps could look forward to as this balance shifts a little and there are more women involved in the creation of video games. 
+
+Cecily
+04:36 - 05:05
+I think what's happening is really interesting in that the tools to create games and distribute them are getting a lot more sophisticated and a lot more accessible than they used to be. And that means that a lot of people are making games who aren't necessarily affiliated with gigantic studios with huge budgets. And that means that a lot of the games that we're seeing are coming from small teams. They're coming from outside the industry, and they deal with themes that are maybe very different from the kinds of things we're used to seeing from big companies. 
+
+Speaker 1
+05:06 - 05:07
+So can you give me some examples? 
+
+Cecily
+05:09 - 05:31
+One example here in Toronto is the work of Christine Love, who makes games that are very reading-focused a lot of the time. They're about solving mysteries by going through logs, talking to other characters, and they have a feminist angle, and they're thematically very different from from the kind of thing you would usually think of when you think video game. 
+
+Speaker 1
+05:32 - 06:11
+Yeah, I have to say, that's the first description of a video game that makes me think, ooh, I'd be interested in that. They're really interesting. Okay, so I see your point. This really would be different if women were behind the scenes. Well, thank you for contributing to that change, and thanks for telling us about it today. Thank you. Cecily Carver is one of the organizers of Dames Making Games. The group puts on a variety of events to get women involved in video game development, and they're going to be holding an event tomorrow night. at Bento Miso on Adelaide, near Strond. On CBC Radio 1, this year and now, in Toronto, 99.1 FM. The Canadian Screen Award nominee. 

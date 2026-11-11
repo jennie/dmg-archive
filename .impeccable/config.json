@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-11T08:46:03.426Z",
+        "reason": ".year rows sit 2rem below a 1px divider rule (padding-top: var(--space-6)); first year has no rule. Checked in render at 1440, 1024, 375."
+      }
+    ]
+  }
+}

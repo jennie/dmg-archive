@@ -8,6 +8,7 @@
   --accent: #ad98fc;
   --accent-hover: #d6ccff;
   --rule: #2e2e2e;
+  --glitch-pink: #ff5fb4;
 
   --font-display: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
@@ -23,6 +24,7 @@
   --space-7: 3rem;
   --gutter: clamp(1rem, 4vw, 3rem);
   --section-gap: clamp(3.5rem, 7vw, 6rem);
+  --nav-h: 3.25rem;
 }
 
 *,
@@ -34,6 +36,16 @@
 html {
   scrollbar-color: #3a3a3a var(--bg);
   -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+main [id] {
+  scroll-margin-top: calc(var(--nav-h) + var(--space-5));
 }
 
 body {
@@ -98,12 +110,190 @@ ul {
 /* Header */
 
 header {
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-5);
 }
 
 h1 {
+  position: relative;
+  width: fit-content;
   margin: 0;
   line-height: 0;
+}
+
+/* One-time glitch on load: purple and pink copies of the wordmark slip
+   out of register and snap back. */
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  -webkit-mask: url("DMG-logo-white@2x.png") center / 100% 100% no-repeat;
+  mask: url("DMG-logo-white@2x.png") center / 100% 100% no-repeat;
+  mix-blend-mode: screen;
+  opacity: 0;
+  pointer-events: none;
+}
+
+h1::after {
+  background: var(--glitch-pink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  h1::before {
+    animation: glitch-a 0.75s steps(1, end) 0.35s both;
+  }
+
+  h1::after {
+    animation: glitch-b 0.75s steps(1, end) 0.35s both;
+  }
+
+  .logo {
+    animation: glitch-base 0.75s steps(1, end) 0.35s both;
+  }
+}
+
+@keyframes glitch-a {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.9;
+    transform: translate(-7px, 0);
+    clip-path: inset(8% 0 62% 0);
+  }
+  20% {
+    transform: translate(5px, 1px);
+    clip-path: inset(58% 0 12% 0);
+  }
+  34% {
+    transform: translate(-4px, -1px);
+    clip-path: inset(28% 0 40% 0);
+  }
+  48% {
+    transform: translate(3px, 0);
+    clip-path: inset(0 0 78% 0);
+  }
+  62% {
+    opacity: 0.7;
+    transform: translate(-2px, 0);
+    clip-path: inset(70% 0 4% 0);
+  }
+  76% {
+    opacity: 0.5;
+    transform: translate(1px, 0);
+    clip-path: inset(40% 0 30% 0);
+  }
+  90%,
+  100% {
+    opacity: 0;
+    transform: none;
+    clip-path: inset(0);
+  }
+}
+
+@keyframes glitch-b {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.85;
+    transform: translate(6px, 1px);
+    clip-path: inset(50% 0 20% 0);
+  }
+  20% {
+    transform: translate(-5px, 0);
+    clip-path: inset(12% 0 66% 0);
+  }
+  34% {
+    transform: translate(4px, 0);
+    clip-path: inset(66% 0 6% 0);
+  }
+  48% {
+    transform: translate(-3px, 1px);
+    clip-path: inset(36% 0 44% 0);
+  }
+  62% {
+    opacity: 0.6;
+    transform: translate(2px, 0);
+    clip-path: inset(4% 0 72% 0);
+  }
+  76% {
+    opacity: 0.4;
+    transform: translate(-1px, 0);
+    clip-path: inset(55% 0 25% 0);
+  }
+  90%,
+  100% {
+    opacity: 0;
+    transform: none;
+    clip-path: inset(0);
+  }
+}
+
+@keyframes glitch-base {
+  0%,
+  48%,
+  100% {
+    transform: none;
+  }
+  20% {
+    transform: translate(2px, 0);
+  }
+  34% {
+    transform: translate(-1px, 0);
+  }
+}
+
+/* Section nav */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin: 0 calc(-1 * var(--gutter)) var(--space-7);
+  padding: 0 var(--gutter);
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  height: var(--nav-h);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.site-nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: var(--space-2) 0;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-stretch: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+.site-nav a[aria-current] {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
 }
 
 .logo {
@@ -207,13 +397,9 @@ figcaption {
     grid-column: 1 / -1;
   }
 
-  .jams ul {
+  .jam-years {
     columns: 2;
     column-gap: var(--space-7);
-  }
-
-  .jams li {
-    break-inside: avoid;
   }
 }
 
@@ -222,9 +408,40 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
-  .jams ul {
+  .jam-years {
     columns: 1;
   }
+}
+
+/* Jams, grouped by year */
+
+.jam-year {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--rule);
+  break-inside: avoid;
+}
+
+.jam-year h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.55;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.archive-grid .jam-year li {
+  margin-bottom: var(--space-1);
+}
+
+.when {
+  margin-left: 0.3em;
+  font-size: 0.875rem;
+  color: var(--text-3);
+  white-space: nowrap;
 }
 
 /* Sections */
@@ -274,7 +491,7 @@ figcaption {
 
 .year h3 {
   position: sticky;
-  top: var(--space-4);
+  top: calc(var(--nav-h) + var(--space-4));
   align-self: start;
   margin: 0;
   font-weight: 800;

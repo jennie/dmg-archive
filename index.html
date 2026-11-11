@@ -29,22 +29,34 @@
         <p class="rip">2012–2024</p>
       </header>
 
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#feb-fatale">Feb Fatale</a></li>
+          <li><a href="#jams">Jams</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#press">Press</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </nav>
+
       <main>
         <div class="intro">
           <p>
-            I'm going to work on building an archive of the work we did
+            I'm working on building an archive of the work we did
             and the community we built over nearly a decade. I don't want our
             collective work, memories, and knowledge to be lost. I'm always open
             to chatting with former members about your experiences and memories
             – <a href="mailto:jennie@jenniefaber.com">get in touch</a>.
           </p>
           <p class="signature">
-            💜 Jennie Robinson Faber (co-founder and former executive director)
+            💜 Jennie Robinson Faber, co-founder
           </p>
         </div>
 
         <div class="archive-grid">
-          <div class="column">
+          <div class="column" id="projects">
             <div class="archived-projects">
               <h2>Archived projects</h2>
               <h3>Online now</h3>
@@ -138,7 +150,7 @@
             </div>
           </div>
 
-          <div class="column">
+          <div class="column" id="feb-fatale">
             <div class="game-jams">
               <h2>Feb Fatale series</h2>
               <ul>
@@ -171,44 +183,105 @@
             </figure>
           </div>
 
-          <div class="column jams">
+          <div class="column jams" id="jams">
             <div class="game-jams">
               <h2>Jams &amp; arcades</h2>
-              <ul>
-                <li>Jamuary (January 2012)</li>
-                <li>ANNAJAM: With Anna Anthropy (October 2012)</li>
-                <li>NO JAM 1-4 (November 2012-2016)</li>
-                <li>Digicade (2012)</li>
-                <li>Jeuxly (July 2012)</li>
-                <li>New Peripherals Jam with MakeyMakey (2013)</li>
-                <li>VideoVideo Jam (2013)</li>
-                <li>SystemFailure Jam (2015)</li>
-                <li>Mother, May I? Jam (May 2013)</li>
-                <li>Junicorn (June 2013)</li>
-                <li>Snacktember: The Damage Sandwich! (September 2013)</li>
-                <li>Spookcade (2014)</li>
-                <li>Ad Hoctober (October 2014)</li>
-                <li>Julivewire! A Hardware Game Jam (July 2014)</li>
-                <li>Digital Media Art+Cade at ImagineNATIVE (2015)</li>
-                <li>Gym Jam (May 2015)</li>
-                <li>The Dread Jam (September 2015)</li>
-                <li>Dreadcade (2015)</li>
-                <li>Dames Demaking Games (February 2016)</li>
-                <li>Global Game Jam: DMG Edition! (January 2016 & 2017)</li>
-                <li>Hyperreal Jam (July 2016)</li>
-                <li>Adventure Jam (2019)</li>
-                <li>VVV Jam (2018)</li>
-                <li>Party Party Party! Jam (2018)</li>
-                <li>CREEPIN-IT-REAL 2018</li>
-                <li>RPG Zine Jam (April 2021)</li>
-                <li>Textile Game Controllers Jam (2020)</li>
-                <li>Stationary Stationery Jam! (June-July 2020)</li>
-              </ul>
+              <div class="jam-years">
+                <div class="jam-year">
+                  <h3>2012</h3>
+                  <ul>
+                    <li>Jamuary <span class="when">January</span></li>
+                    <li>Jeuxly <span class="when">July</span></li>
+                    <li>
+                      ANNAJAM: With Anna Anthropy <span class="when">October</span>
+                    </li>
+                    <li>
+                      NO JAM 1–4 <span class="when">November, 2012–2016</span>
+                    </li>
+                    <li>Digicade</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2013</h3>
+                  <ul>
+                    <li>Mother, May I? Jam <span class="when">May</span></li>
+                    <li>Junicorn <span class="when">June</span></li>
+                    <li>
+                      Snacktember: The Damage Sandwich!
+                      <span class="when">September</span>
+                    </li>
+                    <li>New Peripherals Jam with MakeyMakey</li>
+                    <li>VideoVideo Jam</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2014</h3>
+                  <ul>
+                    <li>
+                      Julivewire! A Hardware Game Jam
+                      <span class="when">July</span>
+                    </li>
+                    <li>Ad Hoctober <span class="when">October</span></li>
+                    <li>Spookcade</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2015</h3>
+                  <ul>
+                    <li>Gym Jam <span class="when">May</span></li>
+                    <li>The Dread Jam <span class="when">September</span></li>
+                    <li>Dreadcade</li>
+                    <li>SystemFailure Jam</li>
+                    <li>Digital Media Art+Cade at ImagineNATIVE</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2016</h3>
+                  <ul>
+                    <li>
+                      Global Game Jam: DMG Edition!
+                      <span class="when">January, 2016 and 2017</span>
+                    </li>
+                    <li>Dames Demaking Games <span class="when">February</span></li>
+                    <li>Hyperreal Jam <span class="when">July</span></li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2018</h3>
+                  <ul>
+                    <li>VVV Jam</li>
+                    <li>Party Party Party! Jam</li>
+                    <li>CREEPIN-IT-REAL 2018</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2019</h3>
+                  <ul>
+                    <li>Adventure Jam</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2020</h3>
+                  <ul>
+                    <li>
+                      Stationary Stationery Jam!
+                      <span class="when">June–July</span>
+                    </li>
+                    <li>Textile Game Controllers Jam</li>
+                  </ul>
+                </div>
+                <div class="jam-year">
+                  <h3>2021</h3>
+                  <ul>
+                    <li>RPG Zine Jam <span class="when">April</span></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="section organizers">
+        <div class="section organizers" id="organizers">
           <h2>Past organizers</h2>
           <p>
             Soha El-Sabaawi, Santo Aveiro-Ojeda, Jayd Matyas, Kaitlin Tremblay,
@@ -219,7 +292,7 @@
           <p class="founders">Founders: Cecily Carver • Alex Leitch • Jennie Robinson Faber</p>
         </div>
 
-        <div class="section speaking">
+        <div class="section speaking" id="speaking">
           <h2>Past speaking engagements</h2>
           <div class="events-grid">
             <div class="year">
@@ -353,7 +426,7 @@
           </div>
         </div>
 
-        <div class="section press-coverage">
+        <div class="section press-coverage" id="press">
           <h2>Press coverage</h2>
           <p class="note">
             Most of the original links have rotted. Linked titles open a saved
@@ -938,7 +1011,7 @@
           </div>
         </div>
 
-        <div class="section references">
+        <div class="section references" id="references">
           <h2>Scholarly references</h2>
           <ul>
             <li>
@@ -1094,5 +1167,52 @@
         </div>
       </main>
     </div>
+    <script>
+      (() => {
+        const nav = document.querySelector(".site-nav");
+        const list = nav.querySelector("ul");
+        const links = [...nav.querySelectorAll("a")].map((a) => ({
+          a,
+          section: document.querySelector(a.getAttribute("href")),
+        }));
+        let queued = false;
+
+        function update() {
+          queued = false;
+          const line = nav.getBoundingClientRect().bottom + 24;
+          let first = null;
+          for (const { a, section } of links) {
+            const r = section.getBoundingClientRect();
+            const on = r.top <= line && r.bottom > line;
+            if (on) {
+              a.setAttribute("aria-current", "true");
+              first ??= a;
+            } else {
+              a.removeAttribute("aria-current");
+            }
+          }
+          if (first && list.scrollWidth > list.clientWidth) {
+            const l = first.offsetLeft;
+            const r = l + first.offsetWidth;
+            if (l < list.scrollLeft || r > list.scrollLeft + list.clientWidth) {
+              list.scrollLeft = l - 16;
+            }
+          }
+        }
+
+        addEventListener(
+          "scroll",
+          () => {
+            if (!queued) {
+              queued = true;
+              requestAnimationFrame(update);
+            }
+          },
+          { passive: true }
+        );
+        addEventListener("resize", update);
+        update();
+      })();
+    </script>
   </body>
 </html>
